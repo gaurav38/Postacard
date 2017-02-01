@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12FBF865AD326AF295E489C /* Pods_Postacard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83AD5011E7AA8F62DC86EBE /* Pods_Postacard.framework */; };
 		C6AA5EBA1E41796400E9A60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA5EB91E41796400E9A60D /* AppDelegate.swift */; };
 		C6AA5EBC1E41796400E9A60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AA5EBB1E41796400E9A60D /* ViewController.swift */; };
 		C6AA5EBF1E41796400E9A60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AA5EBD1E41796400E9A60D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		785B4478EF62C66B1AFDA69E /* Pods-Postacard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postacard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Postacard/Pods-Postacard.release.xcconfig"; sourceTree = "<group>"; };
+		9FB38E5BB7228357A6A4B974 /* Pods-Postacard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postacard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Postacard/Pods-Postacard.debug.xcconfig"; sourceTree = "<group>"; };
 		C6AA5EB61E41796400E9A60D /* Postacard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postacard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AA5EB91E41796400E9A60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AA5EBB1E41796400E9A60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C6AA5EC01E41796400E9A60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6AA5EC31E41796400E9A60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AA5EC51E41796400E9A60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F83AD5011E7AA8F62DC86EBE /* Pods_Postacard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Postacard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12FBF865AD326AF295E489C /* Pods_Postacard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DA60DA9CB717D2843EA2143 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FB38E5BB7228357A6A4B974 /* Pods-Postacard.debug.xcconfig */,
+				785B4478EF62C66B1AFDA69E /* Pods-Postacard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C6AA5EAD1E41796400E9A60D = {
 			isa = PBXGroup;
 			children = (
 				C6AA5EB81E41796400E9A60D /* Postacard */,
 				C6AA5EB71E41796400E9A60D /* Products */,
+				8DA60DA9CB717D2843EA2143 /* Pods */,
+				D925B817CC48B712C84D701B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Postacard;
 			sourceTree = "<group>";
 		};
+		D925B817CC48B712C84D701B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F83AD5011E7AA8F62DC86EBE /* Pods_Postacard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6AA5EC81E41796400E9A60D /* Build configuration list for PBXNativeTarget "Postacard" */;
 			buildPhases = (
+				BAC30A9FFF2151A30F86740A /* [CP] Check Pods Manifest.lock */,
 				C6AA5EB21E41796400E9A60D /* Sources */,
 				C6AA5EB31E41796400E9A60D /* Frameworks */,
 				C6AA5EB41E41796400E9A60D /* Resources */,
+				C4A472A3B9A663EEA9114028 /* [CP] Embed Pods Frameworks */,
+				1D0E0391C9289C2DAF28FB24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0E0391C9289C2DAF28FB24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Postacard/Pods-Postacard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC30A9FFF2151A30F86740A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A472A3B9A663EEA9114028 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Postacard/Pods-Postacard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6AA5EB21E41796400E9A60D /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		C6AA5EC91E41796400E9A60D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB38E5BB7228357A6A4B974 /* Pods-Postacard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YBP3LRB395;
@@ -270,6 +346,7 @@
 		};
 		C6AA5ECA1E41796400E9A60D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785B4478EF62C66B1AFDA69E /* Pods-Postacard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YBP3LRB395;
